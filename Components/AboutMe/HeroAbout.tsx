@@ -17,10 +17,7 @@ const HeroAbout = () => {
                         transition={{ duration: 0.8 }}
                         className="w-full lg:w-1/2 aspect-square relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 group" >
 
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-light/20 text-xl italic group-hover:text-gray-light/40 transition-colors">
-                            <Image src="/images/personal-placeholder.png" alt="Mohamed Haikal" fill priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  className="object-cover opacity-0 group-hover:opacity-10 transition-opacity" />
-                            <span>Your Image Here</span>
-                        </div>
+                        <Image src="/images/personal-placeholder.png" alt="Mohamed Haikal" fill priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-0 group-hover:opacity-10 transition-opacity" />
 
                         <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60" />
                     </CustomTransition>

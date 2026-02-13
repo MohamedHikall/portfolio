@@ -16,11 +16,15 @@ export const metadata: Metadata = {
   description: "Senior UI/UX designer and web developer portfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // Loading Timer Test
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
   return (
     <html lang="en">
       <body

@@ -12,7 +12,7 @@ const AboutMe = () => {
 
         <CustomTransition
             type='div'
-            className="min-h-screen bg-black text-white">
+            className="min-h-screen">
             <HeroAbout />
             <Journey />
             <SkillsAbout />

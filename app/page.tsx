@@ -5,6 +5,7 @@ import ProjectsCards from '@/Components/Home/ProjectsCards/ProjectsCards'
 import Testimonials from '@/Components/Home/Testimonials/Testimonials'
 
 const Home = () => {
+
   return (
 
     <div className="w-full">
