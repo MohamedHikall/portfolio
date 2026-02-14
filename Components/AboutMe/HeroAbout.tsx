@@ -17,7 +17,7 @@ const HeroAbout = () => {
                         transition={{ duration: 0.8 }}
                         className="w-full lg:w-1/2 aspect-square relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 group" >
 
-                        <Image src="/images/personal-placeholder.png" alt="Mohamed Haikal" fill priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover opacity-0 group-hover:opacity-10 transition-opacity" />
+                        <Image src="/avatar/me.png" alt="Mohamed Haikal" fill priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
 
                         <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60" />
                     </CustomTransition>
@@ -43,9 +43,14 @@ const HeroAbout = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 border-t border-white/10">
 
                                 {socialLinks.map((link) => (
-                                    <a key={link.id} href={link.href} target='_blank' className="row-items-center gap-4 text-gray-light hover:text-white transition-colors cursor-pointer">
-                                        <link.icon className="w-5 h-5" />
-                                        <span>{link.label}</span>
+                                    <a
+                                        key={link.id}
+                                        href={link.href}
+                                        target={link.href.startsWith('http') ? '_blank' : '_self'}
+                                        rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                        className="row-items-center gap-4 text-gray-light hover:text-white transition-colors cursor-pointer group" >
+                                        <link.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                        <span className="text-base md:text-lg">{link.label}</span>
                                     </a>
                                 ))}
 

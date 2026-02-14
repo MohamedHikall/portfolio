@@ -72,7 +72,7 @@ const NavigationMobile = ({ isOpen, setIsOpen }: NavigationMobileProps) => {
                             <h4 className="text-white/70 text-sm font-bold uppercase tracking-tighter mb-4">Information</h4>
 
                             <div className="col gap-2 text-gray-light">
-                                <a href="tel:+42077001007" className="hover:text-white transition-colors">+10 686 92087</a>
+                                <a href="tel:+201068692087" className="hover:text-white transition-colors">+10 686 92087</a>
                                 <a href="mailto:hikal1545@gmail.com" className="hover:text-white transition-colors">hikal1545@gmail.com</a>
                                 <p className="leading-relaxed">Avenue de Roma 158b, Lisboa</p>
                             </div>
