@@ -1,7 +1,7 @@
 import { Mail, Github, Linkedin, MapPin, FileText } from 'lucide-react';
 
 export const contactData = {
-    email: "hikal1545@gmail.com",
+    email: "id.mohamed.dev@gmail.com",
     phone: "+10 686 92087",
     cv: "https://drive.google.com/file/d/1dIpfEKa4eM7y5Vcu045WKRQqCHvTgCgQ/view?usp=sharing",
     github: "https://github.com/MohamedHikall",

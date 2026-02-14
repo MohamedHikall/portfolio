@@ -7,12 +7,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(formData: any) {
   try {
-
-   const data = await resend.emails.send({
-     from: "Portfolio <onboarding@resend.dev>",
-     to: "hikal1545@gmail.com",
-     subject: `🚀 مشروع جديد: ${formData.service}`,
-     html: `
+    const data = await resend.emails.send({
+      from: "Portfolio <onboarding@resend.dev>",
+      to: "id.mohamed.dev@gmail.com",
+      subject: `🚀 مشروع جديد: ${formData.service}`,
+      html: `
         <div style="background-color: #f4f4f7; padding: 20px;">
           <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px;">
             
@@ -57,7 +56,7 @@ export async function sendEmail(formData: any) {
           </div>
         </div>
       `,
-   });
+    });
     return { success: true, data };
   } catch (error) {
     return { success: false, error };

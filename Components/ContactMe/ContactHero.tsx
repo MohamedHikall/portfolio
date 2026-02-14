@@ -27,7 +27,7 @@ const ContactHero = () => {
 
                 <div className="col">
                     <label className='text-gray-light font-medium text-lg md:text-2xl'>Email Me:</label>
-                    <span className='text-2xl md:text-5xl font-medium text-start' >hikal1545@gmail.com</span>
+                    <span className='text-2xl md:text-5xl font-medium text-start' >id.mohamed.dev@gmail.com</span>
                 </div>
 
                 <span className='text-white/80 text-start text-lg md:text-xl leading-relaxed lg:max-w-[35%]' >Interested in working with me? Submit your project inquiry using the form below.</span>
